@@ -34,8 +34,3 @@ A modern futuristic weather application built using HTML, CSS, and JavaScript wi
 
 Add your screenshots here.
 
-Example:
-
-```md
-![Dark Mode Screenshot](./screenshots/dark-mode.png)
-![Light Mode Screenshot](./screenshots/light-mode.png)
