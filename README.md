@@ -30,7 +30,4 @@ A modern futuristic weather application built using HTML, CSS, and JavaScript wi
 
 ---
 
-## 📸 Screenshots
-
-Add your screenshots here.
 
