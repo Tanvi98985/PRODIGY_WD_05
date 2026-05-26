@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium AI-powered weather app with futuristic glassmorphism design." />
+  <title>Weatherly - Premium Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="weather-app">
+    <!-- Dynamic Background -->
+    <div class="background-container">
+      <div class="bg-gradient"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo-section">
+          <div class="logo-icon">🌦️</div>
+          <h1 class="logo-text">Weatherly</h1>
+        </div>
+        <div class="header-controls">
+          <button id="unitToggle" class="control-btn" title="Toggle °C/°F">
+            <span class="btn-icon">°C</span>
+          </button>
+          <button id="themeToggle" class="control-btn" title="Toggle Dark/Light">
+            <span class="btn-icon">🌙</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="search-container">
+          <input type="text" id="cityInput" class="search-input" placeholder="Search city..." autocomplete="off"
+            aria-label="Search city" />
+          <button id="searchBtn" class="search-btn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Hero Weather Card -->
+        <section id="weatherCard" class="weather-card glass-effect">
+          <div class="weather-card-content">
+            <div class="loading-animation">
+              <div class="spinner"></div>
+              <p>Loading weather...</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Error Container -->
+        <div id="errorContainer" class="error-container"></div>
+
+        <!-- Weather Details Grid -->
+        <section class="details-section">
+          <div class="details-grid">
+            <div class="detail-card glass-effect" id="detail-humidity">
+              <div class="detail-icon">💧</div>
+              <div class="detail-content">
+                <p class="detail-label">Humidity</p>
+                <p class="detail-value">--</p>
+              </div>
+            </div>
+            <div class="detail-card glass-effect" id="detail-wind">
+              <div class="detail-icon">💨</div>
+              <div class="detail-content">
+                <p class="detail-label">Wind Speed</p>
+                <p class="detail-value">--</p>
+              </div>
+            </div>
+            <div class="detail-card glass-effect" id="detail-visibility">
+              <div class="detail-icon">👁️</div>
+              <div class="detail-content">
+                <p class="detail-label">Visibility</p>
+                <p class="detail-value">--</p>
+              </div>
+            </div>
+            <div class="detail-card glass-effect" id="detail-pressure">
+              <div class="detail-icon">🧭</div>
+              <div class="detail-content">
+                <p class="detail-label">Pressure</p>
+                <p class="detail-value">--</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Weather Assistant Card -->
+        <section class="weather-assistant-card glass-effect">
+          <div class="weather-assistant-header">
+            <span class="weather-assistant-badge">Weather Assistant</span>
+            <span class="weather-assistant-icon">✨</span>
+          </div>
+          <p id="weatherAssistantMessage" class="weather-assistant-message">
+            Search for a city to get personalized weather recommendations...
+          </p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/config.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
